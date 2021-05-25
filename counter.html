@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+            <title>Counter</title>
+            <script>
+                let counter = 0;
+                function count(){
+                    counter++;
+                    document.querySelector('h1').innerHTML = 'Hola ' + counter;
+                }
+                function reset(){
+                    counter = 0;
+                    document.querySelector('h1').innerHTML = 'Hola ' + counter;
+                }
+            </script>
+    </head>
+    <body>
+        <h1>Hola</h1>
+        <button onclick="count()">Count ++ </button>
+        <button onclick="reset()">Reset Counter</button>
+    </body>
+</html>
